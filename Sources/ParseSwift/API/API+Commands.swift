@@ -73,18 +73,10 @@ internal extension API {
             }
             urlRequest.httpMethod = method.rawValue
 
-            URLSession.shared.dataTask(with: urlRequest, callbackQueue: callbackQueue) { result in
+            URLSession.shared.dataTask(with: urlRequest, callbackQueue: callbackQueue, mapper: mapper) { result in
                 switch result {
 
-                case .success(let responseData):
-                    guard let decoded = try? self.mapper(responseData) else {
-                        guard let parseError = try? getDecoder().decode(ParseError.self, from: responseData) else {
-                            completion(.failure(ParseError(code: .unknownError, message: "cannot decode error")))
-                            return
-                        }
-                        completion(.failure(parseError))
-                        return
-                    }
+                case .success(let decoded):
                     completion(.success(decoded))
 
                 case .failure(let error):
