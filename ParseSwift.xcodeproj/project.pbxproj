@@ -177,6 +177,7 @@
 		F97B466A24D9C8C600F4A88B /* FindResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B466824D9C8C600F4A88B /* FindResult.swift */; };
 		F97B466B24D9C8C600F4A88B /* FindResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B466824D9C8C600F4A88B /* FindResult.swift */; };
 		F97B466C24D9C8C600F4A88B /* FindResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B466824D9C8C600F4A88B /* FindResult.swift */; };
+		F97B466E24D9E2D500F4A88B /* EncodingPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B466D24D9E2D500F4A88B /* EncodingPerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,6 +267,7 @@
 		F97B465E24D9C7B500F4A88B /* KeychainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		F97B466324D9C88600F4A88B /* SecureStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		F97B466824D9C8C600F4A88B /* FindResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResult.swift; sourceTree = "<group>"; };
+		F97B466D24D9E2D500F4A88B /* EncodingPerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingPerformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,7 @@
 				911DB13524C4FC100027F3C7 /* ParseObjectCommandTests.swift */,
 				70C7DC1F24D20F180050419B /* ParseQueryTests.swift */,
 				70C7DC1D24D20E530050419B /* ParseUserCommandTests.swift */,
+				F97B466D24D9E2D500F4A88B /* EncodingPerformanceTests.swift */,
 				7FFF552A2217E729007C3B4E /* AnyCodableTests */,
 				911DB12A24C3F7260027F3C7 /* NetworkMocking */,
 			);
@@ -879,6 +882,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97B466E24D9E2D500F4A88B /* EncodingPerformanceTests.swift in Sources */,
 				911DB13624C4FC100027F3C7 /* ParseObjectCommandTests.swift in Sources */,
 				911DB12E24C4837E0027F3C7 /* APICommandTests.swift in Sources */,
 				911DB12C24C3F7720027F3C7 /* MockURLResponse.swift in Sources */,
