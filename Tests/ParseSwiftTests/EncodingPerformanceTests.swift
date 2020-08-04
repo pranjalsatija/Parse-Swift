@@ -857,7 +857,6 @@ extension DecodingError {
     }
 }
 
-
 struct GameScore: ParseSwift.ParseObject {
     //: Those are required for Object
     var objectId: String?
@@ -899,7 +898,7 @@ class EncodingPerformanceTests: XCTestCase {
             }
             return true
         }
-        
+
         measure {
             _ = try! encoder.encode(gameScore)
         }
